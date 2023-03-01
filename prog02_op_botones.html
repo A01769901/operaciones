@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="efectos.css" rel="stylesheet" type="text/css">
+		<title>Operaciones Básicas</title>
+		<script src="prog02_op_botones.js" type="text/JavaScript"></script>
+	</head>
+	<body><center>
+		<h1 class="encabezado">Operaciones básicas</h1>
+		<table border="3" width="70%">
+			<form name="datos">
+				<tr align="center">
+					<td><p>Indica el primer valor</p></td>
+					<td><input type="number" name="v1" class="campo"></td>
+				</tr>
+				<tr align="center">
+					<td><p>Indica el segundo valor</p></td>
+					<td><input type="number" name="v2" class="campo"></td>
+				</tr>
+				<tr align="center">
+					<td colspan="2">
+						<table width="90%">
+							<tr align="center">
+								<td><p>El resultado es</p></td>
+								<td><input type="texto" name="opera" class="campo" disabled="true" style="background:gray;"></td>
+								<td><input name="res" type="number" class="campo" disabled="true" style="background:gray;"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr align="center">
+					<td colspan="2">
+						<table width="100%">
+							<tr align="center">
+								<td><input type="button" name="b_suma" class="boton_azul" value="Suma" onclick="suma()"></td>
+								<td><input type="button" name="b_res" class="boton_azul" value="Resta" onclick="resta()"></td>		
+								<td><input type="button" name="b_multi" class="boton_azul" value="Multiplicación" onclick="multiplicacion()"></td>
+								<td><input type="button" name="b_divi" class="boton_azul" value="División" onclick="division()"></td>
+								<td><input type="reset" name="b_reset" class="boton_rojo" value="Reset"></td>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</form>
+		</table>
+	</center></body>
+</html>
